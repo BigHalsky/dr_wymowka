@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="image-container">
+      <a href="https://ibb.co/mS5kBg9">
+        <img src="https://i.ibb.co/8XgqBtr/Dr-W.jpg" alt="Dr-W" border="0" style="max-width: 100%;">
+      </a>
+    </div>
+
+    <div class="form-container">
+      <p style="font-size: 12px">Wypełnij formularz aby bezstresowo wygenerować wymówkę dla bezczelnej osoby, która śmiała zaprosić cię na cokolwiek 😤<br><br>Zachowaj czas, energię i godność, nie godząc się na plebejskie aktywności 🥂 <br><br></p>
+      <form id="excuseForm">
+        <input type="text" id="personName" placeholder="Twoje imię" required>
+        <input type="text" id="activity" placeholder="Aktywność" required>
+
+        <!-- Dropdown for excuse categories -->
+        <select id="category">
+          <option value="health">Zdrowie</option>
+          <option value="family">Rodzina</option>
+          <option value="work">Praca</option>
+          <option value="transport">Transport</option>
+          <option value="pet">Problemy ze zwierzętami</option>
+        </select>
+
+        <button type="submit">Wygeneruj Wymówkę</button>
+      </form>
+
+      <p id="excuse"></p>
+      <button id="copyButton" style="display: none;">Kopiuj Wymówkę</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
